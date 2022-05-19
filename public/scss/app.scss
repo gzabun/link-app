@@ -1,0 +1,27 @@
+@use "sass:math";
+
+@import 'helpers/variable';
+@import 'helpers/function';
+@import "helpers/mixin";
+@import "helpers/helpers";
+
+
+@import 'base/topography';
+
+@import "layout/skeleton";
+
+@import "element/select";
+@import "element/submit-card";
+@import "element/pagination";
+@import "element/modal";
+
+@import "pages/new";
+@import "pages/list";
+
+
+
+.fade:not(.show) {
+  opacity: 1;
+}
+
+

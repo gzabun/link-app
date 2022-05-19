@@ -1,0 +1,69 @@
+//Toast
+
+.toast-body span {
+  color: #5aad5a;
+}
+
+.toast-style {
+  position: absolute;
+  background-color: #ddf9d3;
+  text-align: center;
+}
+
+
+//Modal
+
+.modal {
+  display: block;
+}
+
+.modal-body span {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-element {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, -30px);
+}
+
+.modal-header {
+  background: black;
+  color: white;
+}
+
+.modal-header {
+  height: 20px;
+}
+
+.modal-header span {
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.modal-footer {
+  border: 0;
+  justify-content: center;
+}
+
+.confirm-button {
+  background: #000000;
+  color: #ffffff;
+  width: 120px;
+  height: 40px;
+  font-weight: 700;
+}
+
+.btn-style {
+  margin-inline-end: 100px;
+  font-weight: 700;
+}
+
+div#exampleModal {
+  backdrop-filter: brightness(0.3);
+}

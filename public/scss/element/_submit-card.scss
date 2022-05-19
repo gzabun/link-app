@@ -1,0 +1,23 @@
+.parent-card {
+  margin-block-start: 20px;
+  width: 400px;
+  background: #f7f7f7;
+  .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .submit-card {
+    width: 90px;
+    height: 90px;
+    background-color: #ececec;
+    text-align: center;
+  }
+  .submit-link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+}

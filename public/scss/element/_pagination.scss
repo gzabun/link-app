@@ -1,0 +1,31 @@
+.pagination {
+  margin-block-start: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.page-link:hover {
+  color: #000000;
+  background-color: #ececec;
+}
+
+.page-link:focus {
+  border-color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.1rem #000000;
+  color: #000000;
+}
+
+.pagination li a {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pagination .page-item {
+  margin-inline-end: 10px;
+}
+
+.page-link {
+  border: 0;
+}

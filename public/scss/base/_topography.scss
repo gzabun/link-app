@@ -1,0 +1,49 @@
+body {
+  font-size: 1rem;
+  font-family: 'Archivo', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline-color: #0085FF;
+}
+
+::selection{
+  color: #0066ff;
+  background: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+*:is(h1,h2,h3,h4,h5,h6){
+  margin: 0;
+}
+
+input{
+  &::placeholder{
+    color:inherit;
+  }
+}
+
+::-webkit-scrollbar {
+  width: remCalculation(12);
+  height: remCalculation(12);
+  background: transparent;
+  border-radius: remCalculation(12);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background:colorOpacity(#455964,0.5);
+  border-radius: remCalculation(12);
+}

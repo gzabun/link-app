@@ -1,0 +1,105 @@
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 400px;
+}
+.list{
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    .list-parent{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      .list-card {
+        min-width: 90px;
+        min-height: 90px;
+        float: left;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ececec;
+        span {
+          span {
+            font-size: 30px;
+            font-weight: 800;
+          }
+        }
+      }
+      .list-detail{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        .delete {
+
+
+          cursor: pointer;
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          @include background(27,27,url("/img/remove.png"),"empty");
+          @layer base{
+            display: none;
+          }
+        }
+        .voting {
+          margin-block-start: 6px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            cursor: pointer;
+            color: #8b8b8b;
+            user-select: none;
+            i {
+              color: #bcbec0;
+              font-size: 25px;
+            }
+          }
+          .down-vote {
+            float: right;
+            margin-inline-end: 20px;
+          }
+        }
+        span {
+          cursor: pointer;
+          color: #8b8b8b;
+        }
+        a,h5{
+          @include lineClamp(1);
+        }
+        a {
+          cursor: pointer;
+          color: #8b8b8b;
+          text-decoration: none;
+        }
+      }
+      &:hover {
+        background: #f7f7f7;
+        cursor: pointer;
+        @layer hover{
+          .delete{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.empty-list {
+  text-align: center;
+  margin-block-start: 100px;
+}
